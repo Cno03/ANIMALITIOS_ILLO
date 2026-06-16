@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/animales";
+const url = "/animales";
 
 const contenedor = document.getElementById("contenedor");
 const contador = document.getElementById("contador");
