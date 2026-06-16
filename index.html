@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimalDB 🐾</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1>🐾 AnimalDB</h1>
+
+
+    <div class="formulario">
+
+        <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre">
+
+        <select id="especie">
+
+            <option value="">Especie</option>
+
+            <option value="Perro">🐶 Perro</option>
+
+            <option value="Gato">🐱 Gato</option>
+
+            <option value="Ave">🦜 Ave</option>
+
+            <option value="Pez">🐟 Pez</option>
+
+            <option value="Reptil">🦎 Reptil</option>
+
+        </select>
+
+
+        <input
+        type="text"
+        id="raza"
+        placeholder="Raza">
+
+
+        <input
+        type="number"
+        id="edad"
+        placeholder="Edad">
+
+
+        <textarea
+        id="descripcion"
+        rows="2"
+        placeholder="Descripción"></textarea>
+
+
+        <input
+        type="text"
+        id="imagen"
+        placeholder="URL de imagen">
+
+
+        <button
+        id="botonGuardar"
+        onclick="guardarAnimal()">
+
+            Guardar Animal
+
+        </button>
+
+    </div>
+
+
+    <div class="barra">
+
+        <input
+        type="text"
+        id="buscador"
+        placeholder="🔍 Buscar por nombre">
+
+
+        <select id="filtro">
+
+            <option value="Todos">Todos</option>
+
+            <option value="Perro">Perros</option>
+
+            <option value="Gato">Gatos</option>
+
+            <option value="Ave">Aves</option>
+
+            <option value="Pez">Peces</option>
+
+            <option value="Reptil">Reptiles</option>
+
+        </select>
+
+
+        <div class="contador-box">
+
+            <h3 id="contador">
+
+                🐾 0 animales
+
+            </h3>
+
+        </div>
+
+
+        <button id="modoOscuro">
+
+            🌙
+
+        </button>
+
+    </div>
+
+
+    <div id="contenedor">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
